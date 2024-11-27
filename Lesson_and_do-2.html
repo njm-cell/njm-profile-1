@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>njm profile</title>
+</head>
+<body>
+    <div class="start-screen" id="startScreen">
+        <h1 class="H1">Click to Enter</h1>
+        <p class="H1">اضغط للبداية</p>
+    </div>
+
+    <nav class="name-back">
+        <div class="TEXT">
+            <img src="./imge/file.png">
+            <h1>NJM</h1>
+            <per class="USER">njm_.1</per>
+            <p> <a href="https://www.instagram.com/seif._uss/"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.youtube.com/@njm_n.1" target="_blank"><i class="fa-brands fa-youtube"></i></a> <a href="https://x.com/njm_272" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> </p>
+        </div>
+    </nav>
+    <video class="video-background" autoplay muted loop>
+        <source src="./background/background.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="./sound/backaudio.mp3" type="audio/mp3">
+    </audio>
+    
+</body>
+
+
+
+
+<!--java script-->
+
+<script>
+
+const startScreen = document.getElementById('startScreen');
+        const content = document.getElementById('content');
+        const audio = document.getElementById('backgroundAudio');
+        startScreen.addEventListener('click', function() {
+            startScreen.classList.add('hidden');
+            content.style.display = 'flex'; // إظهار المحتوى
+            audio.play(); // تشغيل الصوت
+        })
+</script>
+</html>
